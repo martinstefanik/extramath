@@ -1,6 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{extramath}[2021/06/01 extramath package]
 
+\RequirePackage{pgfopts}% package options using pgfkeys package
 \RequirePackage{mathtools}% fix amsmath deficiencies (loads amsmath)
 \RequirePackage{bbm}% only for indicator functions
 \RequirePackage{amsbsy}% \boldsymbol{} command
@@ -8,6 +9,31 @@
 % Default look for expectation and probability
 \newcommand*{\E}{\mathbb{E}}% expectation
 \renewcommand*{\P}{\mathbb{P}}% probability
+
+% Alter the look of \E{} and \P{} based on package options
+\pgfkeys{%
+/extramath/.cd,%
+probability/.is choice,%
+probability/blackboard/.code={},% keep the default look of \E{} and \P{}
+probability/sans-serif/.code={%
+    \renewcommand*{\E}{\textsf{E}}%
+    \renewcommand*{\P}{\textsf{P}}%
+},
+probability/text/.code={%
+    \renewcommand*{\E}{\text{E}}%
+    \renewcommand*{\P}{\text{P}}%
+},
+probability/.unknown/.code={% unknown value passed to 'probability'
+    \PackageError{extramath}{%
+        Unknown value passed to option 'probability': \pgfkeyscurrentname%
+    }
+},%
+.unknown/.code={% unknown package option
+    \PackageError{extramath}{Unknown option}
+},%
+probability=blackboard,%
+}
+\ProcessPgfPackageOptions{/extramath}
 
 % Sets of numbers - these can be typeset using the blackboard letters below as
 % well, but this is quite common among people and is not likely to collide with

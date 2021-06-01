@@ -130,4 +130,103 @@
 \newcommand*{\bY}{\boldsymbol{Y}}
 \newcommand*{\bZ}{\boldsymbol{Z}}
 
+% Probability theory
+\let\med\relax
+\DeclareMathOperator{\med}{med}% median
+\let\skew\relax
+\DeclareMathOperator{\skew}{skew}% skewness
+\let\kurt\relax
+\DeclareMathOperator{\kurt}{kurt}% kurtosis
+\let\Var\relax
+\DeclareMathOperator{\Var}{Var}% variance
+\let\sd\relax
+\DeclareMathOperator{\sd}{sd}% standard deviation
+\let\Cov\relax
+\DeclareMathOperator{\Cov}{Cov}% covariance/covariance matrix
+\let\MSE\relax
+\DeclareMathOperator{\MSE}{MSE}% mean squared error
+\let\Corr\relax
+\DeclareMathOperator{\Corr}{Corr}% correlation/correlation matrix
+
+\newcommand*{\bdot}{\scalebox{2}{\lower.3ex\hbox{$\cdot$}}}% stochastic integral dot
+
+% Matrix theory and linear algebra
+\let\rank\relax
+\DeclareMathOperator{\rank}{rank}% rank of a matrix
+\let\diag\relax
+\DeclareMathOperator{\diag}{diag}% diagonal of matrix
+\let\tr\relax
+\DeclareMathOperator{\tr}{tr}% trace of matrix
+
+% General math
+\let\supp\relax
+\DeclareMathOperator{\supp}{supp}% support
+\let\dom\relax
+\DeclareMathOperator{\dom}{dom}% domain of a map
+\let\codom\relax
+\DeclareMathOperator{\codom}{codom}% codomain of a map
+\let\ran\relax
+\DeclareMathOperator{\ran}{ran}% range of a map
+\let\sign\relax
+\DeclareMathOperator{\sign}{sign}% sign function
+\let\Re\relax
+\DeclareMathOperator{\Re}{Re}% real part of complex number
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}% imaginary part of a complex number
+\let\epi\relax
+\DeclareMathOperator{\epi}{epi}% epigraph
+\let\hypo\relax
+\DeclareMathOperator{\hypo}{hypo}% hypograph
+\let\conv\relax
+\DeclareMathOperator{\conv}{conv}% convex hull
+\let\aff\relax
+\DeclareMathOperator{\aff}{aff}% affine hull
+\let\cone\relax
+\DeclareMathOperator{\cone}{cone}% conic hull
+\let\inter\relax
+\DeclareMathOperator{\inter}{int}% interior of a set
+\let\relint\relax
+\DeclareMathOperator{\relint}{relint}% relative interior of a set
+\let\argmax\relax
+\DeclareMathOperator*{\argmax}{arg\,max}% argmax
+\let\argmin\relax
+\DeclareMathOperator*{\argmin}{arg\,min}% argmin
+\let\esssup\relax
+\DeclareMathOperator*{\esssup}{ess\,sup}% essential supremum
+\let\essinf\relax
+\DeclareMathOperator*{\essinf}{ess\,inf}% essential infimum
+\let\proj\relax
+\DeclareMathOperator*{\proj}{proj}% projection
+
+\newcommand*{\half}{\frac{1}{2}}% 1/2
+\newcommand*{\eqdef}{\overset{\text{def}}{=}}% defining equals
+\newcommand*{\hateq}{\mathrel{\widehat{=}}}% equals with a hat (meaning characterized by)
+\renewcommand*{\d}{\text{d}}% differential
+\newcommand*{\I}{\mathbbm{1}}% indicator function
+
+% Mathematical finance
+\let\VaR\relax
+\DeclareMathOperator{\VaR}{VaR}% value-at-risk
+\let\CVaR\relax
+\DeclareMathOperator{\CVaR}{CVaR}% conditional value-at-risk
+\let\AVaR\relax
+\DeclareMathOperator{\AVaR}{AVaR}% average value-at-risk
+\let\TVaR\relax
+\DeclareMathOperator{\TVaR}{TVaR}% tail value-at-risk
+\let\RVaR\relax
+\DeclareMathOperator{\RVaR}{RVaR}% range value-at-risk
+\let\ES\relax
+\DeclareMathOperator{\ES}{ES}% expected shortfall
+
+% Machine learning
+\let\logit\relax
+\DeclareMathOperator{\logit}{logit}% logit transformation
+\let\softmax\relax
+\DeclareMathOperator{\softmax}{softmax}% softmax function
+\let\relu\relax
+\DeclareMathOperator{\relu}{ReLu}% rectified linear unit
+
+% Misc
+\newcommand*{\eps}{\varepsilon}% better epsilon
+
 \endinput

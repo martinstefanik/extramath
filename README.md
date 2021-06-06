@@ -5,4 +5,3 @@ A LaTeX package with common mathematical commands not defined in other common pa
 ## Installation
 
 For installation on a Linux system, it is enough to clone the repository and run `make` in it (see `Makefile` for more details). For other systems, see this [post](https://tex.stackexchange.com/questions/1137/where-do-i-place-my-own-sty-or-cls-files-to-make-them-available-to-all-my-te) on StackExchange.
-

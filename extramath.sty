@@ -3,7 +3,7 @@
 
 \RequirePackage{pgfopts}% package options using pgfkeys package
 \RequirePackage{mathtools}% fix amsmath deficiencies (loads amsmath)
-\RequirePackage{bbm}% only for indicator functions
+\RequirePackage{dsfont}% only for indicator functions
 \RequirePackage{amsbsy}% \boldsymbol{} command
 
 % Default look for expectation and probability
@@ -228,7 +228,7 @@ probability=blackboard,%
 \newcommand*{\eqdef}{\overset{\text{def}}{=}}% defining equals
 \newcommand*{\hateq}{\mathrel{\widehat{=}}}% equals with a hat (meaning characterized by)
 \renewcommand*{\d}{\text{d}}% differential
-\newcommand*{\I}{\mathbbm{1}}% indicator function
+\newcommand*{\I}{\mathds{1}}% indicator function
 
 % Mathematical finance
 \let\VaR\relax
